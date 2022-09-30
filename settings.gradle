@@ -1,0 +1,5 @@
+include ':group_lib:lib_b'
+include ':group_lib:lib_a'
+include ':group_lib'
+include ':app'
+rootProject.name = "LibDemo"
