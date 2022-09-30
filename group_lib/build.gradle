@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 group = 'com.github.chen3441251'
-version = '1.3.1'
+version = '1.3.5'
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
@@ -35,7 +35,7 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
-    api project(':group_lib:lib_a')
+    compile project(':group_lib:lib_a')
     api project(':group_lib:lib_b')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
@@ -48,7 +48,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.chen3441251'
                 artifactId = 'LibDemo1'
-                version = '1.3.1'
+                version = '1.3.5'
             }
         }
     }
