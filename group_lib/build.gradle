@@ -35,8 +35,8 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
-    api project(path: ':group_lib:lib_a')
-    api project(path: ':group_lib:lib_b')
+    api project(':group_lib:lib_a')
+    api project(':group_lib:lib_b')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
